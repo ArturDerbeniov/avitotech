@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru" class="">
+<head>	
+		<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="color-scheme" content="only light">
+	<title>avito.tech</title>
+	<link rel="preload" href="font/GolosText-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<style>
+		.card:not(.noScrollAnimate) {scale:.9;opacity:0;}
+		.card:not(.noScrollAnimate) .card-inner {opacity: 0}
+		@font-face{font-family:GolosText-Regular;src:url("font/GolosText-Regular.woff2") format("woff2");font-weight:300;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-Medium;src:url("font/GolosText-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-Bold;src:url("font/GolosText-Bold.woff2") format("woff2");font-weight:600;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-SemiBold;src:url("font/GolosText-SemiBold.woff2") format("woff2");font-weight:400;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-ExtraBold;src:url("font/GolosText-ExtraBold.woff2") format("woff2");font-weight:800;font-style:normal;font-stretch:normal;font-display:swap}
+	</style>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="body-master">
+	<header class="headerMain" id="headerMain">
+	<div class="wrapperDefault">
+		<div class="headerMain-inner d-flex align-items-center menuMain-wrapper">
+			<a href="/" class="headerMain-logo">
+				<img src="img/logo.svg" width="229" height="32" alt="avito.tech" />
+			</a>
+			<nav class="menuMain-nav">
+				<ul class="menuMain-list fs-18 d-flex align-items-center cleanList" role="menu">
+					<li class="menuMain-item active">
+						<a href="\we" class="menuMain-link" role="menuitem">кто мы</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="\content" class="menuMain-link" role="menuitem">Контент</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/events/" class="menuMain-link" role="menuitem">Мероприятия</a>
+					</li>
+					<li class="menuMain-item">
+						<span class="menuMain-link" role="menuitem" onclick="doScroll(document.querySelector('.section-7'), 40)">Обучение</span>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/techradar/" class="menuMain-link" role="menuitem">Техрадар</a>
+					</li>
+					
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="https://career.avito.com/vacancies/" role="menuitem">вакансии</a>
+					</li>
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="\contacts" role="menuitem">контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<button type="button" class="headerMain-search-btn">
+				<img src="img/search.svg" alt="" />
+			</button>
+			<button type="button" class="headerMain-mobileMenuAction" aria-haspopup="dialog"></button>
+		</div>
+	</div>
+</header>
+
+	<main class="body-inner">
+		
+		<section class="section section-b1">
+			<div class="wrapperDefault">
+				<h1 class="strih strih-8">Команда <span class="strih-container">AvitoTech</span></h1>
+				<p>Ядро и вечный двигатель AvitoTech — инженеры, их в компании уже больше 3000.</p>				
+			</div>
+			<div class="wrapperDefault position-relative circles2 circlesContainer"> 
+				<a href="https://career.avito.com/vacancies/?q=qa&action=filter" target="_blank" class="circle circles2-1 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-3.svg" alt="" />
+						</div>
+						<div class="circle-text fs-16_fix">
+							QA-инженеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/" target="_blank" class="circle circles2-2 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-4.svg" alt="" />
+						</div>
+						<div class="circle-text fs-16_fix">
+							DBA-инженеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&managers=" target="_blank" class="circle circles2-3 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-5.svg" alt="" />
+						</div>
+						<div class="circle-text">
+							Тимлиды
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&tags%5B%5D=s26501" target="_blank" class="circle circles2-4 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-6.svg" alt="" />
+						</div>
+						<div class="circle-text fs-16_fix">
+							SRE-инженеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&tags%5B%5D=s26490" target="_blank" class="circle circles2-5 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-7.svg" alt="" />
+						</div>
+						<div class="circle-text">
+							фронтендеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=data-science" target="_blank" class="circle circles2-6 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-8.webp" alt="" />
+						</div>
+						<div class="circle-text fs-16_fix">
+							DS-инженеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=analitika-dannykh" target="_blank" class="circle circles2-7 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">											
+							<img src="img/picSmall-9.svg" alt="" />						
+						</div>
+						<div class="circle-text">
+							Аналитики данных
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=dizayn" target="_blank" class="circle circles2-8 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-10.svg" alt="" />						
+						</div>
+						<div class="circle-text fs-16_fix">
+							Дизайнеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&team%5B%5D=analiticheskaya-platforma" target="_blank" class="circle circles2-9 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-11.webp" alt="" />						
+						</div>
+						<div class="circle-text fs-16_fix">
+							Data-<br />инженеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&tags%5B%5D=s26494" target="_blank" class="circle circles2-10 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-14.svg" alt="" />
+						</div>
+						<div class="circle-text">
+							Бэкендеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&tags%5B%5D=s26500&tags%5B%5D=s26499" target="_blank" class="circle circles2-11 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-12.svg" style="width: 33%" alt="" />						
+							<img src="img/picSmall-13.svg" style="width: 33%" alt="" />						
+						</div>
+						<div class="circle-text fs-16_fix">
+							Мобильные разработчики
+					</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="seeAll-wrapper text-center">
+				<a class="seeAll-lnk radius-12 shadHard-2 bg-purpleDark c-fff" href="https://career.avito.com/" target="_blank" rel="noopener">Узнать больше</a>
+			</div>
+		</section>
+		
+		<section class="section section-b2">
+			<div class="wrapperDefault">
+				<h2 class="strih strih-9 mb-4">Как устроен <span class="strih-container">AvitoTech</span></h2>
+				<p>
+					У нас <span class="wideBold">пять вертикалей</span> по направлениям бизнеса. <br class="d-none d-md-block" />
+					А также <span class="wideBold">9 горизонталей</span>, под которыми свои команды разработчиков, ответственные за стримы.
+				</p>
+
+				<h3 class="mt-5">Вертикали</h3>
+				<p>Тут мы разрабатываем направления взаимодействия с пользователями и решения для них.</p>
+				<div class="cards-list cardsInRow-5">
+					<a href="https://career.avito.com/teams/auto/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								АВТО
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/realty/" target="_blank" rel="noopener" class="card card-sm shadHard-1">					
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Недвижимость
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/goods/" target="_blank" rel="noopener" class="card card-sm shadHard-1">										
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Товары
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/job/" target="_blank" rel="noopener" class="card card-sm shadHard-1">															
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Работа
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/services/" target="_blank" rel="noopener" class="card card-sm shadHard-1">																				
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Услуги
+							</div>
+						</div>
+					</a>	
+				</div>
+
+				<h3 class="mt-5">Горизонтали</h3>
+				<p>А тут мы улучшаем текущие сервисы и решения, и разрабатываем новые.</p>
+				<div class="cards-list  cardsInRow-4">					
+					<a href="https://career.avito.com/teams/search-and-recommendations/" target="_blank" rel="noopener" style="grid-column:1/3" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-1.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Search & Recommendations
+							</div>
+							<div class="card-text mt-auto">
+								Помогает пользователям легко находить нужные товары и услуги на Авито
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/buyers-experience/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-2.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Private users
+							</div>
+							<div class="card-text mt-auto">
+								Отвечает за счастье частных пользователей Авито
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/sellers-experience/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-3.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Seller Experience
+							</div>
+							<div class="card-text mt-auto">
+								Заботится о комфорте продавцов
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/monetization/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-4.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Monetization & ADV
+							</div>
+							<div class="card-text mt-auto">
+								Развивает монетизационные и рекламные инструменты
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/fintech/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-5.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Fintech
+							</div>
+							<div class="card-text mt-auto">
+								Делает товары доступнее для покупателя. А продавцы могут продавать больше и быстрее
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/trust-and-safety/" target="_blank" rel="noopener" style="grid-column:3/5" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-6.webp" alt="" />
+							<div class="card-title text-uppercase">
+								SafeCom
+							</div>
+							<div class="card-text mt-auto">
+								Делает коммуникацию между пользователями комфортной и безопасной, развивает профили, верификацию, систему рейтингов и отзывов
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/analytical-platform/" target="_blank" rel="noopener" style="grid-column:1/3" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-7.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Analytics platform
+							</div>
+							<div class="card-text mt-auto">
+								Cоздаёт единую платформу, с помощью которой другие команды могут решать аналитические задачи быстро и самостоятельно
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/dsswat/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-1.webp" alt="" />
+							<div class="card-title text-uppercase">
+								AI Lab
+							</div>
+							<div class="card-text mt-auto">
+								Занимается задачами data science для разных команд Авито
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/internal-projects/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-8.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Operations
+							</div>
+							<div class="card-text mt-auto">
+								Делает Авито эффективнее и удобнее
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<h3 class="mt-5">Платформа</h3>
+				<p>Тут мы делаем работу инженеров Авито быстрой и удобной. Создаём гибкую архитектуру, храним данные и разрабатываем инструменты, которые помогают продуктовым командам.</p>
+				<div class="cards-list">					
+					<a href="https://career.avito.com/teams/technical-platform/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Architecture
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/technical-platform/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								InfrastrucTure
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/technical-platform/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Mobile
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/technical-platform/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								QA
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/technical-platform/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Security
+							</div>
+						</div>
+					</a>	
+				</div>
+
+			</div>
+		</section>
+		
+		<section class="section section-b3">
+			<div class="wrapperDefault">
+				<h2 class="strih strih-10"><span class="strih-container">Технологии</span></h2>
+				<div class="cards-list cards-list-technologies cardsInRow-5">					
+					<div class="card shadHard-1">
+						<div class="card-inner">																					
+							<img data-lazyload="true" data-src="img/technology-1.svg" width="66" alt="">
+							<div class="card-title mt-auto">
+								Golang
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">																					
+							<img data-lazyload="true" data-src="img/technology-2.svg" width="34" alt="">
+							<div class="card-title mt-auto">
+								Python
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-3.svg" width="36" alt="">
+							<div class="card-title mt-auto">
+								Kubernetes
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-4.svg" width="21" alt="">
+							<div class="card-title mt-auto">
+								Kafka
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-5.svg" width="16" alt="">
+							<div class="card-title mt-auto">
+								MongoDB
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-6.svg" width="63" alt="">
+							<div class="card-title mt-auto">
+								PHP
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-7.svg" width="44" alt="">
+							<div class="card-title mt-auto">
+								Docker
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-8.svg" width="39" alt="">
+							<div class="card-title mt-auto">
+								Swift
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-9.svg" width="34" alt="">
+							<div class="card-title mt-auto">
+								Kotlin
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-10.svg" width="35" alt="">
+							<div class="card-title mt-auto">
+								Machine Learning
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-11.svg" width="33" alt="">
+							<div class="card-title mt-auto">
+								PostgresQL
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-12.svg" width="40" alt="">
+							<div class="card-title mt-auto">
+								Redis
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-13.svg" width="39" alt="">
+							<div class="card-title mt-auto">
+								Clickhouse
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-14.svg" width="35" alt="">
+							<div class="card-title mt-auto">
+								SphinxSearch
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-15.svg" width="35" alt="">
+							<div class="card-title mt-auto">
+								JavaScript
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-16.svg" width="39" alt="">
+							<div class="card-title mt-auto">
+								Trino
+							</div>
+						</div>
+					</div>	
+					<div class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" data-src="img/technology-17.svg" width="35" alt="">
+							<div class="card-title mt-auto">
+								Flink
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</section>
+		
+		<section class="section section-b4">
+			<div class="wrapperDefault">
+				<h2 class="strih strih-3">Примеры <span class="strih-container">задач</span></h2>
+				
+				<div class="row">
+					<div class="col-12 col-xl-9">
+						<div class="cards-list">
+							<div class="card shadHard-1">
+								<div class="card-inner">																					
+									<div class="card-text">
+										<b>Внедряем инструменты</b>, которые ускоряют производительность сайта и мобильных приложений
+									</div>
+								</div>
+							</div>	
+							<div class="card shadHard-1">
+								<div class="card-inner">																					
+									<div class="card-text">
+										<img data-lazyload="true" data-src="img/picSmall-1.webp" alt="" width="95" height="95" class="float-end" />
+										<b>Строим <a href="">микросервисную архитектуру</a></b> приложений по концепции platform as a service
+									</div>
+								</div>
+							</div>	
+							<div class="card shadHard-1">
+								<div class="card-inner">																					
+									<div class="card-text">
+										<b>Разрабатываем системы автоматической модерации</b> с поиском по изображению, модели машинного обучения
+									</div>
+								</div>
+							</div>	
+							<div class="card shadHard-1">
+								<div class="card-inner">																					
+									<div class="card-text">
+										<img data-lazyload="true" data-src="img/picSmall-2.webp" alt="" width="83" height="132" class="float-end" />
+										<b>Развёртываем <a href="">кластеры Kubernetes</a></b> на несколько дата-центров
+									</div>
+								</div>
+							</div>	
+							<div class="card shadHard-1">
+								<div class="card-inner">																					
+									<div class="card-text">
+										<b>Запускаем A/B-тесты</b> из единой платформы для хранения экспериментов
+									</div>
+								</div>
+							</div>	
+							<div class="card shadHard-1">
+								<div class="card-inner">																					
+									<div class="card-text">
+										<b>Создаём единую библиотеку компонентов</b> для упрощённой разработки интерфейсов
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="col-12 col-xl-3 d-none d-xl-block">
+						<div class="image">
+							<img data-src="img/pic-4.webp" data-lazyload="true" style="max-width: 361px;rotate: 23deg; z-index: -1;position: relative; margin-left: auto;" alt="" />
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+
+		<section class="section section-b5">
+			<div class="wrapperDefault">
+				<h2 class="strih strih-11 mb-4">Процессы и <span class="strih-container">ценности</span></h2>				
+
+				<div class="row gx-0">
+					<div class="col-12 col-lg-6">
+						
+						<div class="cards-list cardsInRow-1 mt-0 mb-lg-0 ps-lg-4 p-xl-0">					
+							<div class="card card-sm shadHard-1">
+								<div class="card-inner">																					
+									<div class="card-title fs-20">
+										Следим за тем, чтобы процессы не усложняли работу — автоматизируем и оптимизируем
+									</div>
+								</div>
+							</div>
+							<div class="card card-sm shadHard-1">
+								<div class="card-inner">																					
+									<div class="card-title fs-20">
+										Проверяем решения и процессы на здравый смысл и пользу
+									</div>
+								</div>
+							</div>
+							<div class="card card-sm shadHard-1">
+								<div class="card-inner">																					
+									<div class="card-title fs-20">
+										Считаем, что эксперименты и аналитика — это путь к лучшему решению
+									</div>
+								</div>
+							</div>
+							<div class="card card-sm shadHard-1">
+								<div class="card-inner">																					
+									<div class="card-title fs-20">
+										Регулярно проводим review для роста и улучшения
+									</div>
+								</div>
+							</div>
+							<div class="card card-sm shadHard-1">
+								<div class="card-inner">																					
+									<div class="card-title fs-20">
+										Растим специалистов по прозрачной матрице компетенций и ИПР
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 order-lg-first justify-content-between d-flex flex-column">
+						<p>Мы гордимся <b>развитой инженерной культурой Авито</b>, которая помогает сделать работу команд полезной для пользователей и комфортной для инженеров.</p>
+						<div class="image">
+							<img data-lazyload="true" data-src="img/pic-5.svg" alt="" />
+						</div>
+						<p>
+							Подробности о&nbsp;ценностях, бизнес-процессах, стандартах, процедурах и&nbsp;правилах, которые мы&nbsp;используем в&nbsp;команде разработки в&nbsp;Авито, можно найти в&nbsp;нашем <a class="u-line" href="https://github.com/avito-tech/playbook" target="_blank">Playbook на&nbsp;GitHub</a>.
+						</p>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+
+		<section class="section section-extended section-b6 bg-gray">
+			<div class="wrapperDefault">
+				<h2 class="strih strih-12 mb-5 c-fff">Поддержка <span class="strih-container">экспертов</span></h2>
+
+				<div class="row d-flex align-items-end gx-0">
+					<div class="col-12 col-lg-6">
+						<ol class="listBigNumber">
+							<li class="shadHard-1 card"><div class="card-inner"><p>Практикуем <b>культуру открытости, обсуждения и здравого смысла</b></p></div></li>
+							<li class="shadHard-1 card"><div class="card-inner"><p>Растим и развиваем <b>16 внутренних сообществ:</b> от аналитиков до SRE-инженеров</p></div></li>
+							<li class="shadHard-1 card"><div class="card-inner"><p>Поддерживаем <b>регулярный внутренний движ:</b> митапы, Demo, TechHour, AllHands, BeerJS</p></div></li>
+							<li class="shadHard-1 card"><div class="card-inner"><p><b>Развиваем бренд экспертов:</b> помогаем превратить идеи в готовые статьи, выступления и подкасты</p></div></li>
+							<li class="shadHard-1 card"><div class="card-inner"><p><b>Растим экспертизу сотрудников</b> через внутренние курсы, экспертов, базы знаний и поддержку обучения</p></div></li>
+						</ol>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="image">
+							<img data-lazyload="true" data-src="img/pic-6.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-extended section-b7">
+			<div class="wrapperDefault mb-5 position-relative">
+				<div class="row position-relative z-0">
+					<div class="col-12 col-md-10 col-lg-7 col-xl-6">						
+						<h2 class="mb-5">AvitoTech — это люди, которые создают решения</h2>
+						<p>Сначала люди, а потом технологии — создаём <br class="d-none d-md-block" /> самые комфортные условия для работы и отдыха.</p>
+					</div>
+					<div class="d-none d-lg-block position-absolute w-75 h-100 top-0 end-0 z-n1 text-end">
+						<img data-lazyload="true" data-src="img/pic-7.svg" height="100%" alt="" />
+					</div>
+				</div>
+				<div class="cards-list cardsInRow-2">					
+					<div class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title fs-20">
+								ДМС с первого рабочего дня со стоматологией и скидкой для близких
+							</div>
+						</div>
+					</div>
+					<div class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title fs-20">
+								Работа удаленно и в комфортных офисах, гибкий рабочий день
+							</div>
+						</div>
+					</div>
+					<div class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title fs-20">
+								Конкурентная зарплата и прозрачная система премий
+							</div>
+						</div>
+					</div>
+					<div class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title fs-20">
+								Спортзалы и йога
+							</div>
+						</div>
+					</div>
+					<div class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title fs-20">
+								Поддержка психолога, экспертов по финансам и ЗОЖ
+							</div>
+						</div>
+					</div>
+					<div class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title fs-20">
+								Пинг-понг, бильярд, футбол и другие игры в офисе
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</main>
+	
+	
+	<footer class="footerMain">
+	<div class="footerMain-inner bg-purple">
+		<div class="wrapperDefault d-flex align-items-center menuMain-wrapper">
+			<a href="/" class="footerMain-logo">
+				<img data-lazyload="true" data-src="img/logo.svg" width="229" height="32" alt="avito.tech" />
+			</a>
+			<nav class="menuMain-nav">
+				<ul class="menuMain-list fs-18 d-flex align-items-center cleanList" role="menu">
+					<li class="menuMain-item">
+						<a href="\we" class="menuMain-link" role="menuitem">кто мы</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="\content" class="menuMain-link" role="menuitem">Контент</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/events/" class="menuMain-link" role="menuitem">Мероприятия</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/teach/" class="menuMain-link" role="menuitem">Обучение</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/techradar/" class="menuMain-link" role="menuitem">Техрадар</a>
+					</li>
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="https://career.avito.com/vacancies/" role="menuitem">вакансии</a>
+					</li>
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="\contacts" role="menuitem">контакты</a>
+					</li>
+				</ul>
+			</nav>			
+		</div>
+	</div>
+	<div class="footerMain-inner bg-black">
+		<div class="wrapperDefault">
+			<div class="row">
+				<div class="col-12 col-lg-7 footerMain-mailto">
+					<div class="fs-18_fix">
+						Партнёрам <br />
+						<a href="mailto:tech@avito.ru" class="fs-24 c-fff">tech@avito.ru</a>
+					</div>
+					<div class="fs-18_fix">
+						Прессе <br />
+						<a href="mailto:pr@avito.ru" class="fs-24 c-fff">pr@avito.ru</a>
+					</div>
+				</div>
+				<div class="col-12 col-lg-5">
+					<nav class="footerMenu-nav">
+						<ul class="footerMenu-list">
+							<li class="footerMenu-item">
+								<a href="https://t.me/avitotech" target="_blank" class="footerMenu-link" rel="noopener">Telegram</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://www.youtube.com/c/AvitoTech" target="_blank" class="footerMenu-link" rel="noopener">YouTube</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://github.com/avito-tech" target="_blank" class="footerMenu-link" rel="noopener">GitHub</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://habrahabr.ru/company/avito/" target="_blank" class="footerMenu-link" rel="noopener">Habr</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://vk.com/avitotech" target="_blank" class="footerMenu-link" rel="noopener">VK</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-12 col-lg-7 fs-16_fix mb-3 mb-lg-0">
+					Компания ООО «Авито Тех» проектирует, разрабатывает, обновляет, <br class="d-none d-lg-block" /> модифицирует и исправляет программы для ЭВМ и базы данных.
+				</div>
+				<div class="col-12 col-lg-5 fs-16_fix">
+					© ООО «Авито Тех» 2020–2025
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	<div class="searchWidget-overlay">
+	<div class="searchWidget-pnl">
+		<div class="searchWidget-form">
+			<input type="text" class="searchWidget-form-input" placeholder="Поиск" />
+			<button type="button" class="searchWidget-form-clean">
+				<svg role="presentation" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.00004 10.9659L10.9999 0.999962" stroke="#000000"></path> <path d="M10.9883 10.9986L1.00214 1.02924" stroke="#000000"></path> </svg>
+			</button>
+			<svg role="presentation" class="searchWidget-form-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle r="7.93388" transform="matrix(0.715639 0.698471 -0.715639 0.698471 18.5859 11.7816)" stroke-width="1.0" stroke="#000000"></circle> <line y1="-0.5" x2="9.17531" y2="-0.5" transform="matrix(-0.715635 0.698474 -0.715635 -0.698474 12.75 16.9609)" stroke-width="1.0" stroke="#000000"></line> </svg>
+		</div>
+		<button type="button" class="searchWidget-close">
+			<svg role="presentation" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="#000000"></path> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="#000000"></path> </svg>
+		</button>
+	</div>
+</div>
+
+<dialog class="modal" id="modalVideo">
+	<div class="modal-inner">
+		
+	</div>
+	<button type="button" class="modal-close" aria-label="Закрыть модальное окно">
+		<span class="visually-hidden">Закрыть модальное окно</span>
+	</button>
+</dialog>
+
+<script type="text/javascript" defer src="js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+<!-- <script defer type="text/javascript" src="/js/gsap.min.js"></script>
+<script defer src="/js/ScrollTrigger.min.js"></script> -->
+
+<!-- <link rel="stylesheet" href="/css/swiper.min.css" />
+<script defer type="text/javascript" src="/js/swiper.min.js"></script> -->
+
+<script defer type="text/javascript" src="js/common.js"></script>
+
+	
+</body>
+</html>

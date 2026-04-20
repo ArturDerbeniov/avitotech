@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru" class="">
+<head>	
+		<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="color-scheme" content="only light">
+	<title>avito.tech</title>
+	<link rel="preload" href="font/GolosText-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<style>
+		.card:not(.noScrollAnimate) {scale:.9;opacity:0;}
+		.card:not(.noScrollAnimate) .card-inner {opacity: 0}
+		@font-face{font-family:GolosText-Regular;src:url("font/GolosText-Regular.woff2") format("woff2");font-weight:300;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-Medium;src:url("font/GolosText-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-Bold;src:url("font/GolosText-Bold.woff2") format("woff2");font-weight:600;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-SemiBold;src:url("font/GolosText-SemiBold.woff2") format("woff2");font-weight:400;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-ExtraBold;src:url("font/GolosText-ExtraBold.woff2") format("woff2");font-weight:800;font-style:normal;font-stretch:normal;font-display:swap}
+	</style>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="body-master">
+	<header class="headerMain" id="headerMain">
+	<div class="wrapperDefault">
+		<div class="headerMain-inner d-flex align-items-center menuMain-wrapper">
+			<a href="/" class="headerMain-logo">
+				<img src="img/logo.svg" width="229" height="32" alt="avito.tech" />
+			</a>
+			<nav class="menuMain-nav">
+				<ul class="menuMain-list fs-18 d-flex align-items-center cleanList" role="menu">
+					<li class="menuMain-item active">
+						<a href="\we" class="menuMain-link" role="menuitem">кто мы</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="\content" class="menuMain-link" role="menuitem">Контент</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/events/" class="menuMain-link" role="menuitem">Мероприятия</a>
+					</li>
+					<li class="menuMain-item">
+						<span class="menuMain-link" role="menuitem" onclick="doScroll(document.querySelector('.section-7'), 40)">Обучение</span>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/techradar/" class="menuMain-link" role="menuitem">Техрадар</a>
+					</li>
+					
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="https://career.avito.com/vacancies/" role="menuitem">вакансии</a>
+					</li>
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="\contacts" role="menuitem">контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<button type="button" class="headerMain-search-btn">
+				<img src="img/search.svg" alt="" />
+			</button>
+			<button type="button" class="headerMain-mobileMenuAction" aria-haspopup="dialog"></button>
+		</div>
+	</div>
+</header>
+
+	<main class="body-inner">
+		
+		<section class="section section-4">
+			<div class="wrapperDefault">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg ">
+						<h2 class="h2 w-lg-50">Мероприятия</h2>
+					</div>					
+				</div>	
+				
+				<div class="buttonsTab">
+					<a href="" class="btn-round btn-big btn-white active">онлайн</a>
+					<a href="" class="btn-round btn-big btn-white">офлайн</a>
+					<a href="" class="btn-round btn-big btn-white">гибрид</a>
+				</div>
+				<div class="buttonsTab">
+					<a href="" class="btn-round btn-white">QA meetup</a>
+					<a href="" class="btn-round btn-white">Backend Drinkup</a>
+					<a href="" class="btn-round btn-white">Mobile meetup</a>
+				</div>
+
+				<div class="cards-list cardsInRow-2">
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">
+							<div class="card-image shadHard-1 radius-20">
+								<img data-lazyload="true" data-src="img/card-pic-1.webp" alt="" />
+							</div>							
+							<div class="card-title">
+								Avito QA meetup
+							</div>
+							<div class="card-text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam illum saepe quod voluptatum ullam quo fugit esse sint assumenda optio impedit dignissimos, veritatis deserunt sequi ex reiciendis labore ipsam?</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam illum saepe quod voluptatum ullam quo fugit esse sint assumenda optio impedit dignissimos, veritatis deserunt sequi ex reiciendis labore ipsam?</p>
+							</div>
+							<div class="card-badges badges">
+								<div class="badge">Митапы</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">
+							<div class="card-image shadHard-1 radius-20">
+								<img data-lazyload="true" data-src="img/card-pic-1.webp" alt="" />
+							</div>							
+							<div class="card-title">
+								Гайд для лидов: как маленькими шагами прийти к большим переменам
+							</div>
+							<div class="card-text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam illum saepe quod voluptatum ullam quo fugit esse sint assumenda optio impedit dignissimos, veritatis deserunt sequi ex reiciendis labore ipsam?</p>
+							</div>
+							<div class="card-badges badges">
+								<div class="badge">Статьи</div>
+								<div class="badge">management</div>
+								<div class="badge">фан</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">
+							<div class="card-image shadHard-1 radius-20">
+								<img data-lazyload="true" data-src="img/card-pic-1.webp" alt="" />
+							</div>							
+							<div class="card-title">
+								LLM против хаоса: как я автоматизировал ревизию прав доступа в админке Авито
+							</div>
+							<div class="card-text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam illum saepe quod voluptatum ullam quo fugit esse sint </p>
+							</div>
+							<div class="card-badges badges">
+								<div class="badge">Статьи</div>
+								<div class="badge">machine learning</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">
+							<div class="card-image shadHard-1 radius-20">
+								<img data-lazyload="true" data-src="img/card-pic-1.webp" alt="" />
+							</div>							
+							<div class="card-title">
+								Avito Backend Drinkup
+							</div>
+							<div class="card-text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam illum saepe quod voluptatum ullam quo fugit esse sint </p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto quos, in ex fugiat sed dolore facilis! Tempora quae nam minima et facere aperiam culpa, optio, ab similique delectus esse.</p>
+							</div>
+							<div class="card-badges badges">
+								<div class="badge">Статьи</div>
+								<div class="badge">machine learning</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="seeAll-wrapper text-center">
+					<a class="seeAll-lnk seeAll-lnk_bg radius-12 shadHard-2 bg-purpleDark c-fff d-inline-block d-lg-none" href="https://avito.tech/content" target="_blank" rel="noopener">СМОТРЕТЬ ВСЕ</a>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	
+	
+	<footer class="footerMain">
+	<div class="footerMain-inner bg-purple">
+		<div class="wrapperDefault d-flex align-items-center menuMain-wrapper">
+			<a href="/" class="footerMain-logo">
+				<img data-lazyload="true" data-src="img/logo.svg" width="229" height="32" alt="avito.tech" />
+			</a>
+			<nav class="menuMain-nav">
+				<ul class="menuMain-list fs-18 d-flex align-items-center cleanList" role="menu">
+					<li class="menuMain-item">
+						<a href="\we" class="menuMain-link" role="menuitem">кто мы</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="\content" class="menuMain-link" role="menuitem">Контент</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/events/" class="menuMain-link" role="menuitem">Мероприятия</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/teach/" class="menuMain-link" role="menuitem">Обучение</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/techradar/" class="menuMain-link" role="menuitem">Техрадар</a>
+					</li>
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="https://career.avito.com/vacancies/" role="menuitem">вакансии</a>
+					</li>
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="\contacts" role="menuitem">контакты</a>
+					</li>
+				</ul>
+			</nav>			
+		</div>
+	</div>
+	<div class="footerMain-inner bg-black">
+		<div class="wrapperDefault">
+			<div class="row">
+				<div class="col-12 col-lg-7 footerMain-mailto">
+					<div class="fs-18_fix">
+						Партнёрам <br />
+						<a href="mailto:tech@avito.ru" class="fs-24 c-fff">tech@avito.ru</a>
+					</div>
+					<div class="fs-18_fix">
+						Прессе <br />
+						<a href="mailto:pr@avito.ru" class="fs-24 c-fff">pr@avito.ru</a>
+					</div>
+				</div>
+				<div class="col-12 col-lg-5">
+					<nav class="footerMenu-nav">
+						<ul class="footerMenu-list">
+							<li class="footerMenu-item">
+								<a href="https://t.me/avitotech" target="_blank" class="footerMenu-link" rel="noopener">Telegram</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://www.youtube.com/c/AvitoTech" target="_blank" class="footerMenu-link" rel="noopener">YouTube</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://github.com/avito-tech" target="_blank" class="footerMenu-link" rel="noopener">GitHub</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://habrahabr.ru/company/avito/" target="_blank" class="footerMenu-link" rel="noopener">Habr</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://vk.com/avitotech" target="_blank" class="footerMenu-link" rel="noopener">VK</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-12 col-lg-7 fs-16_fix mb-3 mb-lg-0">
+					Компания ООО «Авито Тех» проектирует, разрабатывает, обновляет, <br class="d-none d-lg-block" /> модифицирует и исправляет программы для ЭВМ и базы данных.
+				</div>
+				<div class="col-12 col-lg-5 fs-16_fix">
+					© ООО «Авито Тех» 2020–2025
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	<div class="searchWidget-overlay">
+	<div class="searchWidget-pnl">
+		<div class="searchWidget-form">
+			<input type="text" class="searchWidget-form-input" placeholder="Поиск" />
+			<button type="button" class="searchWidget-form-clean">
+				<svg role="presentation" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.00004 10.9659L10.9999 0.999962" stroke="#000000"></path> <path d="M10.9883 10.9986L1.00214 1.02924" stroke="#000000"></path> </svg>
+			</button>
+			<svg role="presentation" class="searchWidget-form-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle r="7.93388" transform="matrix(0.715639 0.698471 -0.715639 0.698471 18.5859 11.7816)" stroke-width="1.0" stroke="#000000"></circle> <line y1="-0.5" x2="9.17531" y2="-0.5" transform="matrix(-0.715635 0.698474 -0.715635 -0.698474 12.75 16.9609)" stroke-width="1.0" stroke="#000000"></line> </svg>
+		</div>
+		<button type="button" class="searchWidget-close">
+			<svg role="presentation" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="#000000"></path> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="#000000"></path> </svg>
+		</button>
+	</div>
+</div>
+
+<dialog class="modal" id="modalVideo">
+	<div class="modal-inner">
+		
+	</div>
+	<button type="button" class="modal-close" aria-label="Закрыть модальное окно">
+		<span class="visually-hidden">Закрыть модальное окно</span>
+	</button>
+</dialog>
+
+<script type="text/javascript" defer src="js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+<!-- <script defer type="text/javascript" src="/js/gsap.min.js"></script>
+<script defer src="/js/ScrollTrigger.min.js"></script> -->
+
+<!-- <link rel="stylesheet" href="/css/swiper.min.css" />
+<script defer type="text/javascript" src="/js/swiper.min.js"></script> -->
+
+<script defer type="text/javascript" src="js/common.js"></script>
+
+	
+</body>
+</html>

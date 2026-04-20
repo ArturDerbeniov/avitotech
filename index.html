@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ru" class="">
+<head>	
+		<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="color-scheme" content="only light">
+	<title>avito.tech</title>
+	<link rel="preload" href="font/GolosText-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="font/GolosText-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<style>
+		.card:not(.noScrollAnimate) {scale:.9;opacity:0;}
+		.card:not(.noScrollAnimate) .card-inner {opacity: 0}
+		@font-face{font-family:GolosText-Regular;src:url("font/GolosText-Regular.woff2") format("woff2");font-weight:300;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-Medium;src:url("font/GolosText-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-Bold;src:url("font/GolosText-Bold.woff2") format("woff2");font-weight:600;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-SemiBold;src:url("font/GolosText-SemiBold.woff2") format("woff2");font-weight:400;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-ExtraBold;src:url("font/GolosText-ExtraBold.woff2") format("woff2");font-weight:800;font-style:normal;font-stretch:normal;font-display:swap}
+	</style>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="body-master">
+	<header class="headerMain" id="headerMain">
+	<div class="wrapperDefault">
+		<div class="headerMain-inner d-flex align-items-center menuMain-wrapper">
+			<a href="/" class="headerMain-logo">
+				<img src="img/logo.svg" width="229" height="32" alt="avito.tech" />
+			</a>
+			<nav class="menuMain-nav">
+				<ul class="menuMain-list fs-18 d-flex align-items-center cleanList" role="menu">
+					<li class="menuMain-item active">
+						<a href="\we" class="menuMain-link" role="menuitem">кто мы</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="\content" class="menuMain-link" role="menuitem">Контент</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/events/" class="menuMain-link" role="menuitem">Мероприятия</a>
+					</li>
+					<li class="menuMain-item">
+						<span class="menuMain-link" role="menuitem" onclick="doScroll(document.querySelector('.section-7'), 40)">Обучение</span>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/techradar/" class="menuMain-link" role="menuitem">Техрадар</a>
+					</li>
+					
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="https://career.avito.com/vacancies/" role="menuitem">вакансии</a>
+					</li>
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="\contacts" role="menuitem">контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<button type="button" class="headerMain-search-btn">
+				<img src="img/search.svg" alt="" />
+			</button>
+			<button type="button" class="headerMain-mobileMenuAction" aria-haspopup="dialog"></button>
+		</div>
+	</div>
+</header>
+
+	<main class="body-inner">
+		
+		<section class="section section-1 bg-gray">
+			<div class="wrapperDefault">
+				<div class="section-text section-text-absolute">
+					<p class="c-fff fs-58 fw-bold strih-1">AvitoTech&nbsp;&mdash; команда <br /> инженеров, которые не <br class="d-none d-md-block" />просто пишут код, а&nbsp;создают <br /> высокотехнологичные <br /> продукты для <span class="strih-container">людей</span></p>
+				</div>
+				<div class="image section-image mt-3 mt-lg-0" style="max-width: 580px; width: 55%; position: relative; left: 60%;">
+					<img data-lazyload="true" data-src="img/pic-1.svg" width="580" height="580" alt="" />
+				</div>
+			</div>
+		</section>
+		
+		<section class="section section-2">
+			<div class="wrapperDefault">
+				<div class="section-text">
+					<h2 class="strih-2">AvitoTech в <span class="strih-container">цифрах*</span></h2>
+					<p>*На основании внутренних данных AvitoTech</p>
+				</div>
+				<div class="circles circlesContainer">
+					<div class="circle circle-1 bg-purple shadHard-1">
+						<div class="circle-data">
+							370+
+						</div>
+						<div class="circle-text">
+							команд разработки
+						</div>
+					</div>
+					<div class="circle circle-2 bg-purple shadHard-1">
+						<div class="circle-data">
+							3000+
+						</div>
+						<div class="circle-text">
+							сервисов
+						</div>
+					</div>
+					<div class="circle circle-3 bg-purple shadHard-1">
+						<div class="circle-data">
+							113
+						</div>
+						<div class="circle-text">
+							млн пользователей в месяц
+						</div>
+					</div>
+					<div class="circle circle-4 bg-green shadHard-1">
+						<div class="circle-data">
+							242
+						</div>
+						<div class="circle-text">
+							млн активных объявлений
+						</div>
+					</div>
+					<div class="circle circle-5 bg-green shadHard-1">
+						<div class="circle-data">
+							2700+
+						</div>
+						<div class="circle-text">
+							инженеров
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-3 bg-gray">
+			<div class="wrapperDefault">
+				<div class="row align-items-end">
+					<div class="col-12 col-lg-6">
+						<div class="section-text">
+							<h2 class="h2 c-fff mb-4 strih-3">Что мы <span class="strih-container">делаем</span></h2>
+							<p class="c-fff fs-16">Разрабатываем и поддерживаем продукты Авито — сервисы, которые делают жизнь миллионов людей удобнее. Скучать не&nbsp;придётся&nbsp;— высокая нагрузка на&nbsp;системы, много задач, для которых нет готовых решений, а&nbsp;на&nbsp;каждом проекте&nbsp;— свои вызовы.</p>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="section-aside">
+							<div class="image section-image d-none d-lg-block mx-auto" style="margin-bottom: -37px;">
+								<img data-lazyload="true" data-src="img/pic-2.svg" alt="" width="444" height="236" style="max-width: 444px;" class="mx-auto" />
+							</div>
+							<a href="https://www.avito.ru/" target="_blank" rel="noopener" class="card noScrollAnimate d-block bg-white br-20 shadHard-1 radius-20 paddinline-30px py-4 position-relative mt-4 mt-lg-0">
+								<img data-lazyload="true" data-src="img/avito.svg" alt="" width="155" height="42" />
+								<p class="fs-16_fix ff-med mb-3 mt-3">Cамая популярная онлайн-платформа объявлений в&nbsp;мире с&nbsp;70+ млн. посетителей ежемесячно*</p>
+								<div class="fs-12_fix">*Согласно данным Similar Web на декабрь 2024</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-4">
+			<div class="wrapperDefault">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg ">
+						<h2 class="h2 strih-4">Шерим  <span class="strih-container">экспертизу</span></h2>
+					</div>
+					<div class="col-lg-auto d-none d-lg-block">
+						<a class="seeAll-lnk radius-12 shadHard-2 bg-purpleDark c-fff c-static" href="https://avito.tech/content">СМОТРЕТЬ ВСЕ</a>
+					</div>
+				</div>
+
+				<div class="buttonsTab">
+					<a href="" class="btn-round btn-big btn-white active">все</a>
+					<a href="" class="btn-round btn-big btn-white">статьи</a>
+					<a href="" class="btn-round btn-big btn-white">видео</a>
+					<a href="" class="btn-round btn-big btn-white">подкасты</a>
+					<a href="" class="btn-round btn-big btn-white">новости</a>
+				</div>
+				
+				<div class="buttonsTab d-none d-lg-flex">
+					<a href="" class="btn-round btn-white active">все</a>
+					<a href="" class="btn-round btn-white">статьи</a>
+					<a href="" class="btn-round btn-white">видео</a>
+					<a href="" class="btn-round btn-white">подкасты</a>
+					<a href="" class="btn-round btn-white">open source</a>
+					<a href="" class="btn-round btn-white">architecture</a>
+					<a href="" class="btn-round btn-white">analytics</a>
+					<a href="" class="btn-round btn-white">android</a>
+					<a href="" class="btn-round btn-white">backend</a>
+					<a href="" class="btn-round btn-white">data science</a>
+					<a href="" class="btn-round btn-white">dba</a>
+					<a href="" class="btn-round btn-white">design</a>
+					<a href="" class="btn-round btn-white">DevOps</a>
+					<a href="" class="btn-round btn-white">Big Data</a>
+					<a href="" class="btn-round btn-white">frontend</a>
+					<a href="" class="btn-round btn-white">github</a>
+					<a href="" class="btn-round btn-white">go</a>
+					<a href="" class="btn-round btn-white">hr</a>
+					<a href="" class="btn-round btn-white">infrastructure</a>
+					<a href="" class="btn-round btn-white">interview</a>
+					<a href="" class="btn-round btn-white">iOS</a>
+					<a href="" class="btn-round btn-white">machine learning</a>
+					<a href="" class="btn-round btn-white">management</a>
+					<a href="" class="btn-round btn-white">mobile</a>
+					<a href="" class="btn-round btn-white">php</a>
+					<a href="" class="btn-round btn-white">product</a>
+					<a href="" class="btn-round btn-white">python</a>
+					<a href="" class="btn-round btn-white">QA</a>
+					<a href="" class="btn-round btn-white">search</a>
+					<a href="" class="btn-round btn-white">security</a>
+					<a href="" class="btn-round btn-white">UI/UX</a>
+					<a href="" class="btn-round btn-white">микросервисы</a>
+					<a href="" class="btn-round btn-white">фан</a>
+					<a href="" class="btn-round btn-white">DevRel</a>
+				</div>
+
+				<div class="cards-list">
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">
+							<div class="card-image shadHard-1 radius-20">
+								<img data-lazyload="true" data-src="img/card-pic-1.webp" alt="" />
+							</div>
+							<div class="card-date">
+								29 августа 2025 12:00
+							</div>
+							<div class="card-title">
+								Avito QA meetup
+							</div>
+							<div class="card-text">
+								Регистрация открыта ✓
+							</div>
+							<div class="card-badges badges">
+								<div class="badge">Митапы</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">
+							<div class="card-image shadHard-1 radius-20">
+								<img data-lazyload="true" data-src="img/card-pic-1.webp" alt="" />
+							</div>
+							<div class="card-date">
+								29 августа 2025 12:00
+							</div>
+							<div class="card-title">
+								Гайд для лидов: как маленькими шагами прийти к большим переменам
+							</div>
+							<div class="card-text">
+								Лера, технический писатель
+							</div>
+							<div class="card-badges badges">
+								<div class="badge">Статьи</div>
+								<div class="badge">management</div>
+								<div class="badge">фан</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">
+							<div class="card-image shadHard-1 radius-20">
+								<img data-lazyload="true" data-src="img/card-pic-1.webp" alt="" />
+							</div>
+							<div class="card-date">
+								29 августа 2025 12:00
+							</div>
+							<div class="card-title">
+								LLM против хаоса: как я автоматизировал ревизию прав доступа в админке Авито
+							</div>
+							<div class="card-text">
+								Андрей Усенок
+							</div>
+							<div class="card-badges badges">
+								<div class="badge">Статьи</div>
+								<div class="badge">machine learning</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="seeAll-wrapper text-center">
+					<a class="seeAll-lnk seeAll-lnk_bg radius-12 shadHard-2 bg-purpleDark c-fff c-static d-inline-block d-lg-none" href="https://avito.tech/content">СМОТРЕТЬ ВСЕ</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-6">
+			<div class="logos ">
+				<div class="logos__line logos__line__1" data-speed="70" data-direction="1">
+					<span class="btn-round btn-big btn-white logos__line__item">статьи</span>
+					<span class="btn-round btn-big btn-white logos__line__item">backend</span>
+					<span class="btn-round btn-big btn-white logos__line__item">видео</span>
+					<span class="btn-round btn-big btn-white logos__line__item">митапы</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Open Source</span>
+					<span class="btn-round btn-big btn-white logos__line__item">architecture</span>
+					<span class="btn-round btn-big btn-white logos__line__item">фан</span>
+					<span class="btn-round btn-big btn-white logos__line__item">analytics</span>
+					<span class="btn-round btn-big btn-white logos__line__item">android</span>
+					<span class="btn-round btn-big btn-white logos__line__item">data science</span>
+					<span class="btn-round btn-big btn-white logos__line__item">dba</span>
+					<span class="btn-round btn-big btn-white logos__line__item">design</span>
+					<span class="btn-round btn-big btn-white logos__line__item">DevOps</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Big Data</span>
+					<span class="btn-round btn-big btn-white logos__line__item">frontend</span>
+					<span class="btn-round btn-big btn-white logos__line__item">go</span>
+					<span class="btn-round btn-big btn-white logos__line__item">github</span>
+					<span class="btn-round btn-big btn-white logos__line__item">hr</span>
+					<span class="btn-round btn-big btn-white logos__line__item">infrastructure</span>
+					<span class="btn-round btn-big btn-white logos__line__item">interview</span>
+					<span class="btn-round btn-big btn-white logos__line__item">qa</span>
+					<span class="btn-round btn-big btn-white logos__line__item">iOS</span>
+					<span class="btn-round btn-big btn-white logos__line__item">machine learning</span>
+					<span class="btn-round btn-big btn-white logos__line__item">product</span>
+					<span class="btn-round btn-big btn-white logos__line__item">mobile</span>
+					<span class="btn-round btn-big btn-white logos__line__item">php</span>
+					<span class="btn-round btn-big btn-white logos__line__item">python</span>
+					<span class="btn-round btn-big btn-white logos__line__item">техродукты</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ui/ux</span>
+					<span class="btn-round btn-big btn-white logos__line__item">search</span>
+					<span class="btn-round btn-big btn-white logos__line__item">микросервисы</span>
+					<span class="btn-round btn-big btn-white logos__line__item">devrel</span>
+					<span class="btn-round btn-big btn-white logos__line__item">menegment</span>
+				</div>
+				<div class="logos__line logos__line__2" data-speed="70" data-direction="-1">
+					<span class="btn-round btn-big btn-white logos__line__item">статьи</span>
+					<span class="btn-round btn-big btn-white logos__line__item">backend</span>
+					<span class="btn-round btn-big btn-white logos__line__item">видео</span>
+					<span class="btn-round btn-big btn-white logos__line__item">митапы</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Open Source</span>
+					<span class="btn-round btn-big btn-white logos__line__item">architecture</span>
+					<span class="btn-round btn-big btn-white logos__line__item">фан</span>
+					<span class="btn-round btn-big btn-white logos__line__item">analytics</span>
+					<span class="btn-round btn-big btn-white logos__line__item">android</span>
+					<span class="btn-round btn-big btn-white logos__line__item">data science</span>
+					<span class="btn-round btn-big btn-white logos__line__item">dba</span>
+					<span class="btn-round btn-big btn-white logos__line__item">design</span>
+					<span class="btn-round btn-big btn-white logos__line__item">DevOps</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Big Data</span>
+					<span class="btn-round btn-big btn-white logos__line__item">frontend</span>
+					<span class="btn-round btn-big btn-white logos__line__item">go</span>
+					<span class="btn-round btn-big btn-white logos__line__item">github</span>
+					<span class="btn-round btn-big btn-white logos__line__item">hr</span>
+					<span class="btn-round btn-big btn-white logos__line__item">infrastructure</span>
+					<span class="btn-round btn-big btn-white logos__line__item">interview</span>
+					<span class="btn-round btn-big btn-white logos__line__item">qa</span>
+					<span class="btn-round btn-big btn-white logos__line__item">iOS</span>
+					<span class="btn-round btn-big btn-white logos__line__item">machine learning</span>
+					<span class="btn-round btn-big btn-white logos__line__item">product</span>
+					<span class="btn-round btn-big btn-white logos__line__item">mobile</span>
+					<span class="btn-round btn-big btn-white logos__line__item">php</span>
+					<span class="btn-round btn-big btn-white logos__line__item">python</span>
+					<span class="btn-round btn-big btn-white logos__line__item">техродукты</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ui/ux</span>
+					<span class="btn-round btn-big btn-white logos__line__item">search</span>
+					<span class="btn-round btn-big btn-white logos__line__item">микросервисы</span>
+					<span class="btn-round btn-big btn-white logos__line__item">devrel</span>
+					<span class="btn-round btn-big btn-white logos__line__item">menegment</span>
+				</div>
+				<div class="logos__line logos__line__3" data-speed="70" data-direction="1">
+					<span class="btn-round btn-big btn-white logos__line__item">статьи</span>
+					<span class="btn-round btn-big btn-white logos__line__item">backend</span>
+					<span class="btn-round btn-big btn-white logos__line__item">видео</span>
+					<span class="btn-round btn-big btn-white logos__line__item">митапы</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Open Source</span>
+					<span class="btn-round btn-big btn-white logos__line__item">architecture</span>
+					<span class="btn-round btn-big btn-white logos__line__item">фан</span>
+					<span class="btn-round btn-big btn-white logos__line__item">analytics</span>
+					<span class="btn-round btn-big btn-white logos__line__item">android</span>
+					<span class="btn-round btn-big btn-white logos__line__item">data science</span>
+					<span class="btn-round btn-big btn-white logos__line__item">dba</span>
+					<span class="btn-round btn-big btn-white logos__line__item">design</span>
+					<span class="btn-round btn-big btn-white logos__line__item">DevOps</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Big Data</span>
+					<span class="btn-round btn-big btn-white logos__line__item">frontend</span>
+					<span class="btn-round btn-big btn-white logos__line__item">go</span>
+					<span class="btn-round btn-big btn-white logos__line__item">github</span>
+					<span class="btn-round btn-big btn-white logos__line__item">hr</span>
+					<span class="btn-round btn-big btn-white logos__line__item">infrastructure</span>
+					<span class="btn-round btn-big btn-white logos__line__item">interview</span>
+					<span class="btn-round btn-big btn-white logos__line__item">qa</span>
+					<span class="btn-round btn-big btn-white logos__line__item">iOS</span>
+					<span class="btn-round btn-big btn-white logos__line__item">machine learning</span>
+					<span class="btn-round btn-big btn-white logos__line__item">product</span>
+					<span class="btn-round btn-big btn-white logos__line__item">mobile</span>
+					<span class="btn-round btn-big btn-white logos__line__item">php</span>
+					<span class="btn-round btn-big btn-white logos__line__item">python</span>
+					<span class="btn-round btn-big btn-white logos__line__item">техродукты</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ui/ux</span>
+					<span class="btn-round btn-big btn-white logos__line__item">search</span>
+					<span class="btn-round btn-big btn-white logos__line__item">микросервисы</span>
+					<span class="btn-round btn-big btn-white logos__line__item">devrel</span>
+					<span class="btn-round btn-big btn-white logos__line__item">menegment</span>
+				</div>
+				<div class="logos__line logos__line__4" data-speed="70" data-direction="-1">
+					<span class="btn-round btn-big btn-white logos__line__item">статьи</span>
+					<span class="btn-round btn-big btn-white logos__line__item">backend</span>
+					<span class="btn-round btn-big btn-white logos__line__item">видео</span>
+					<span class="btn-round btn-big btn-white logos__line__item">митапы</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Open Source</span>
+					<span class="btn-round btn-big btn-white logos__line__item">architecture</span>
+					<span class="btn-round btn-big btn-white logos__line__item">фан</span>
+					<span class="btn-round btn-big btn-white logos__line__item">analytics</span>
+					<span class="btn-round btn-big btn-white logos__line__item">android</span>
+					<span class="btn-round btn-big btn-white logos__line__item">data science</span>
+					<span class="btn-round btn-big btn-white logos__line__item">dba</span>
+					<span class="btn-round btn-big btn-white logos__line__item">design</span>
+					<span class="btn-round btn-big btn-white logos__line__item">DevOps</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Big Data</span>
+					<span class="btn-round btn-big btn-white logos__line__item">frontend</span>
+					<span class="btn-round btn-big btn-white logos__line__item">go</span>
+					<span class="btn-round btn-big btn-white logos__line__item">github</span>
+					<span class="btn-round btn-big btn-white logos__line__item">hr</span>
+					<span class="btn-round btn-big btn-white logos__line__item">infrastructure</span>
+					<span class="btn-round btn-big btn-white logos__line__item">interview</span>
+					<span class="btn-round btn-big btn-white logos__line__item">qa</span>
+					<span class="btn-round btn-big btn-white logos__line__item">iOS</span>
+					<span class="btn-round btn-big btn-white logos__line__item">machine learning</span>
+					<span class="btn-round btn-big btn-white logos__line__item">product</span>
+					<span class="btn-round btn-big btn-white logos__line__item">mobile</span>
+					<span class="btn-round btn-big btn-white logos__line__item">php</span>
+					<span class="btn-round btn-big btn-white logos__line__item">python</span>
+					<span class="btn-round btn-big btn-white logos__line__item">техродукты</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ui/ux</span>
+					<span class="btn-round btn-big btn-white logos__line__item">search</span>
+					<span class="btn-round btn-big btn-white logos__line__item">микросервисы</span>
+					<span class="btn-round btn-big btn-white logos__line__item">devrel</span>
+					<span class="btn-round btn-big btn-white logos__line__item">menegment</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-5">
+			<div class="wrapperDefault">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg">
+						<h2 class="h2 strih-5">Проводим <span class="strih-container">мероприятия</span></h2>
+					</div>
+					<div class="col-lg-auto d-none d-lg-block">
+						<a class="seeAll-lnk radius-12 shadHard-2 bg-purpleDark c-fff c-static" href="https://avitotech.timepad.ru/events/">СМОТРЕТЬ ВСЕ</a>
+					</div>
+				</div>
+
+				<div class="buttonsTab">
+					<a href="" class="btn-round btn-big btn-white active">онлайн</a>
+					<a href="" class="btn-round btn-big btn-white">офлайн</a>
+					<a href="" class="btn-round btn-big btn-white">гибрид</a>
+				</div>
+				<div class="buttonsTab">
+					<a href="" class="btn-round btn-white">QA meetup</a>
+					<a href="" class="btn-round btn-white">Backend Drinkup</a>
+					<a href="" class="btn-round btn-white">Mobile meetup</a>
+				</div>
+				
+				<div class="cards-list">
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">
+							<div class="card-image shadHard-1 radius-20">
+								<img data-lazyload="true" data-src="img/card-pic-1.webp" alt="" />
+							</div>							
+							<div class="card-title">
+								Avito QA meetup
+							</div>
+							<div class="card-text">
+								Регистрация открыта ✓
+							</div>
+							<div class="card-badges badges">
+								<div class="badge">Митапы</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">
+							<div class="card-image shadHard-1 radius-20">
+								<img data-lazyload="true" data-src="img/card-pic-1.webp" alt="" />
+							</div>							
+							<div class="card-title">
+								Avito Backend Drinkup
+							</div>
+							<div class="card-text">
+								Регистрация открыта ✓
+							</div>
+							<div class="card-badges badges">
+								<div class="badge">Митапы</div>
+							</div>
+						</div>
+					</a>
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">
+							<div class="card-image shadHard-1 radius-20">
+								<img data-lazyload="true" data-src="img/card-pic-1.webp" alt="" />
+							</div>							
+							<div class="card-title">
+								Avito Mobile meetup
+							</div>
+							<div class="card-text">
+								Регистрация открыта ✓
+							</div>
+							<div class="card-badges badges">
+								<div class="badge">Митапы</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="seeAll-wrapper text-center">
+					<a class="seeAll-lnk seeAll-lnk_bg radius-12 shadHard-2 bg-purpleDark c-fff c-static d-inline-block d-lg-none" href="https://avitotech.timepad.ru/events/" >СМОТРЕТЬ ВСЕ</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-7">
+			<div class="wrapperDefault">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg">
+						<h2 class="h2 strih-6"><span class="strih-container">Обучаем</span></h2>
+					</div>					
+				</div>	
+				
+				<div class="buttonsTab buttonsTab-line">
+					<a href="" class="btn-round btn-white">JavaScript</a>
+					<a href="" class="btn-round btn-white">Управление разработкой</a>
+					<a href="" class="btn-round btn-white">Паттерны и практики</a>
+					<a href="" class="btn-round btn-white">Аналитика</a>					
+				</div>
+
+				<div class="cards-list">
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">														
+							<div class="card-badges badges">
+								<div class="badge">Javascript</div>
+							</div>
+							<div class="card-title">
+								Курс по Javascript
+							</div>
+							<div class="card-text">
+								Этот курс погружает во фронтенд-разработку и её базовые технологии
+							</div>
+							<div class="card-goto">на страницу курса</div>
+						</div>
+					</a>					
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">														
+							<div class="card-badges badges">
+								<div class="badge">Управление разработкой</div>
+							</div>
+							<div class="card-title">
+								«Школа Тимлидов Авито»
+							</div>
+							<div class="card-text">
+								Прокачайтесь и получите возможность попасть в команду менеджеров AvitoTech
+							</div>
+							<div class="card-goto">на страницу курса</div>
+						</div>
+					</a>					
+					<a href class="card shadHard-1">
+						<div class="card-inner">														
+							<div class="card-badges badges">
+								<div class="badge">Паттерны и практики</div>
+							</div>
+							<div class="card-title">
+								Паттерны и практики написания кода
+							</div>
+							<div class="card-text">
+								Бесплатный курс от Юры Афанасьева для начинающих и middle-разработчиков.
+							</div>
+							<div class="card-goto">на страницу курса</div>
+						</div>
+					</a>					
+				</div>				
+				<a href="" class="card shadHard-1">
+					<div class="card-inner">														
+						<div class="card-badges badges">
+							<div class="badge">СТАЖИРОВКИ</div>
+						</div>
+						<div class="card-title">
+							Стажировки в Avito
+						</div>
+						<div class="card-text">
+							Развивай продукты для миллионов пользователей и учись на задачах, важных для бизнеса
+						</div>
+						<div class="card-goto">на страницу стажировок</div>
+					</div>
+				</a>					
+			</div>
+		</section>
+
+		<section class="section section-8">
+			<div class="wrapperDefault">
+				<h2 class="h2 strih-7">Создаем и развиваем IT-решения для <span class="strih-container">бизнеса</span></h2>
+				<div class="cards-list">
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-logo">
+								<img data-lazyload="true" data-src="img/logo_trisigma.webp" alt="" />
+							</div>
+							<div class="card-text">
+								Платформа для A/B-тестирования, анализа и визуализации метрик
+							</div>
+						</div>
+					</a>							
+					<a href="" class="card shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-logo">
+								<img data-lazyload="true" data-src="img/logo_avitoplato.svg" alt="" />
+							</div>
+							<div class="card-text">
+								Self-service-платформа для ускорения разработки
+							</div>
+						</div>
+					</a>		
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-extended section-9 bg-gray">
+			<div class="wrapperDefault mb-5 position-relative">
+				<div class="section-text section-text-absolute">
+					<h2 class="h2 c-fff mb-4 strih-1">Хочешь <br /> <span class="strih-container">присоединиться?</span></h2>
+					<p class="c-fff mb-5">Вакансии в команду AvitoTech</p>
+					<a class="seeAll-lnk radius-12 shadHard-2 bg-purpleDark c-fff c-static" href="https://career.avito.com/vacancies/">НАШИ ВАКАНСИИ — ЗДЕСЬ</a>
+				</div>
+				<div class="image section-image mt-5 mt-lg-0" style="max-width: 870px; width: 60vw; position: relative; left: 40%">
+					<img data-lazyload="true" data-src="img/pic-3.svg" width="870" height="568" alt="" />
+				</div>
+			</div>
+		
+			<div class="logos ">
+				<div class="logos__line logos__line__8" data-speed="70" data-direction="1">
+					<span class="btn-round btn-big btn-white logos__line__item">ОБУЧЕНИЕ</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Фича-лидерство</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Комьюнити</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Перфревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Tech Design Review</span>
+					<span class="btn-round btn-big btn-white logos__line__item">код-ревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ДМС со стоматологией</span>
+					<span class="btn-round btn-big btn-white logos__line__item">менторство</span>					
+					<span class="btn-round btn-big btn-white logos__line__item">ОБУЧЕНИЕ</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Фича-лидерство</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Комьюнити</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Перфревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Tech Design Review</span>
+					<span class="btn-round btn-big btn-white logos__line__item">код-ревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ДМС со стоматологией</span>
+					<span class="btn-round btn-big btn-white logos__line__item">менторство</span>					
+				</div>				
+				<div class="logos__line logos__line__7" data-speed="70" data-direction="-1">
+					<span class="btn-round btn-big btn-white logos__line__item">ОБУЧЕНИЕ</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Фича-лидерство</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Комьюнити</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Перфревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Tech Design Review</span>
+					<span class="btn-round btn-big btn-white logos__line__item">код-ревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ДМС со стоматологией</span>
+					<span class="btn-round btn-big btn-white logos__line__item">менторство</span>					
+					<span class="btn-round btn-big btn-white logos__line__item">ОБУЧЕНИЕ</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Фича-лидерство</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Комьюнити</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Перфревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Tech Design Review</span>
+					<span class="btn-round btn-big btn-white logos__line__item">код-ревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ДМС со стоматологией</span>
+					<span class="btn-round btn-big btn-white logos__line__item">менторство</span>					
+				</div>				
+				<div class="logos__line logos__line__6" data-speed="70" data-direction="1">
+					<span class="btn-round btn-big btn-white logos__line__item">ОБУЧЕНИЕ</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Фича-лидерство</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Комьюнити</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Перфревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Tech Design Review</span>
+					<span class="btn-round btn-big btn-white logos__line__item">код-ревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ДМС со стоматологией</span>
+					<span class="btn-round btn-big btn-white logos__line__item">менторство</span>					
+					<span class="btn-round btn-big btn-white logos__line__item">ОБУЧЕНИЕ</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Фича-лидерство</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Комьюнити</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Перфревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Tech Design Review</span>
+					<span class="btn-round btn-big btn-white logos__line__item">код-ревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ДМС со стоматологией</span>
+					<span class="btn-round btn-big btn-white logos__line__item">менторство</span>					
+				</div>				
+				<div class="logos__line logos__line__5" data-speed="70" data-direction="-1">
+					<span class="btn-round btn-big btn-white logos__line__item">ОБУЧЕНИЕ</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Фича-лидерство</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Комьюнити</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Перфревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Tech Design Review</span>
+					<span class="btn-round btn-big btn-white logos__line__item">код-ревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ДМС со стоматологией</span>
+					<span class="btn-round btn-big btn-white logos__line__item">менторство</span>					
+					<span class="btn-round btn-big btn-white logos__line__item">ОБУЧЕНИЕ</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Фича-лидерство</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Комьюнити</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Перфревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">Tech Design Review</span>
+					<span class="btn-round btn-big btn-white logos__line__item">код-ревью</span>
+					<span class="btn-round btn-big btn-white logos__line__item">ДМС со стоматологией</span>
+					<span class="btn-round btn-big btn-white logos__line__item">менторство</span>					
+				</div>				
+			</div>
+		</section>
+		
+	</main>
+	
+	
+	<footer class="footerMain">
+	<div class="footerMain-inner bg-purple">
+		<div class="wrapperDefault d-flex align-items-center menuMain-wrapper">
+			<a href="/" class="footerMain-logo">
+				<img data-lazyload="true" data-src="img/logo.svg" width="229" height="32" alt="avito.tech" />
+			</a>
+			<nav class="menuMain-nav">
+				<ul class="menuMain-list fs-18 d-flex align-items-center cleanList" role="menu">
+					<li class="menuMain-item">
+						<a href="\we" class="menuMain-link" role="menuitem">кто мы</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="\content" class="menuMain-link" role="menuitem">Контент</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/events/" class="menuMain-link" role="menuitem">Мероприятия</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/teach/" class="menuMain-link" role="menuitem">Обучение</a>
+					</li>
+					<li class="menuMain-item">
+						<a href="https://avitotech.timepad.ru/techradar/" class="menuMain-link" role="menuitem">Техрадар</a>
+					</li>
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="https://career.avito.com/vacancies/" role="menuitem">вакансии</a>
+					</li>
+					<li class="menuMain-item">
+						<a class="menuMain-link" href="\contacts" role="menuitem">контакты</a>
+					</li>
+				</ul>
+			</nav>			
+		</div>
+	</div>
+	<div class="footerMain-inner bg-black">
+		<div class="wrapperDefault">
+			<div class="row">
+				<div class="col-12 col-lg-7 footerMain-mailto">
+					<div class="fs-18_fix">
+						Партнёрам <br />
+						<a href="mailto:tech@avito.ru" class="fs-24 c-fff">tech@avito.ru</a>
+					</div>
+					<div class="fs-18_fix">
+						Прессе <br />
+						<a href="mailto:pr@avito.ru" class="fs-24 c-fff">pr@avito.ru</a>
+					</div>
+				</div>
+				<div class="col-12 col-lg-5">
+					<nav class="footerMenu-nav">
+						<ul class="footerMenu-list">
+							<li class="footerMenu-item">
+								<a href="https://t.me/avitotech" target="_blank" class="footerMenu-link" rel="noopener">Telegram</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://www.youtube.com/c/AvitoTech" target="_blank" class="footerMenu-link" rel="noopener">YouTube</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://github.com/avito-tech" target="_blank" class="footerMenu-link" rel="noopener">GitHub</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://habrahabr.ru/company/avito/" target="_blank" class="footerMenu-link" rel="noopener">Habr</a>
+							</li>
+							<li class="footerMenu-item">
+								<a href="https://vk.com/avitotech" target="_blank" class="footerMenu-link" rel="noopener">VK</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-12 col-lg-7 fs-16_fix mb-3 mb-lg-0">
+					Компания ООО «Авито Тех» проектирует, разрабатывает, обновляет, <br class="d-none d-lg-block" /> модифицирует и исправляет программы для ЭВМ и базы данных.
+				</div>
+				<div class="col-12 col-lg-5 fs-16_fix">
+					© ООО «Авито Тех» 2020–2025
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	<div class="searchWidget-overlay">
+	<div class="searchWidget-pnl">
+		<div class="searchWidget-form">
+			<input type="text" class="searchWidget-form-input" placeholder="Поиск" />
+			<button type="button" class="searchWidget-form-clean">
+				<svg role="presentation" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.00004 10.9659L10.9999 0.999962" stroke="#000000"></path> <path d="M10.9883 10.9986L1.00214 1.02924" stroke="#000000"></path> </svg>
+			</button>
+			<svg role="presentation" class="searchWidget-form-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle r="7.93388" transform="matrix(0.715639 0.698471 -0.715639 0.698471 18.5859 11.7816)" stroke-width="1.0" stroke="#000000"></circle> <line y1="-0.5" x2="9.17531" y2="-0.5" transform="matrix(-0.715635 0.698474 -0.715635 -0.698474 12.75 16.9609)" stroke-width="1.0" stroke="#000000"></line> </svg>
+		</div>
+		<button type="button" class="searchWidget-close">
+			<svg role="presentation" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="#000000"></path> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="#000000"></path> </svg>
+		</button>
+	</div>
+</div>
+
+<dialog class="modal" id="modalVideo">
+	<div class="modal-inner">
+		
+	</div>
+	<button type="button" class="modal-close" aria-label="Закрыть модальное окно">
+		<span class="visually-hidden">Закрыть модальное окно</span>
+	</button>
+</dialog>
+
+<script type="text/javascript" defer src="js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+<!-- <script defer type="text/javascript" src="/js/gsap.min.js"></script>
+<script defer src="/js/ScrollTrigger.min.js"></script> -->
+
+<!-- <link rel="stylesheet" href="/css/swiper.min.css" />
+<script defer type="text/javascript" src="/js/swiper.min.js"></script> -->
+
+<script defer type="text/javascript" src="js/common.js"></script>
+
+	
+</body>
+</html>
