@@ -12,8 +12,9 @@
 	<link rel="preload" href="font/GolosText-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="font/GolosText-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<style>
-		.card:not(.noScrollAnimate) {scale:.9;opacity:0;}
-		.card:not(.noScrollAnimate) .card-inner {opacity: 0}
+		.card:not(.noAnimateOnScroll) {scale:.9;opacity:0;}
+		.card:not(.noAnimateOnScroll) .card-inner {opacity: 0}
+		.animationWaitFor {opacity: 0;}
 		@font-face{font-family:GolosText-Regular;src:url("font/GolosText-Regular.woff2") format("woff2");font-weight:300;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-Medium;src:url("font/GolosText-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-Bold;src:url("font/GolosText-Bold.woff2") format("woff2");font-weight:600;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-SemiBold;src:url("font/GolosText-SemiBold.woff2") format("woff2");font-weight:400;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:GolosText-ExtraBold;src:url("font/GolosText-ExtraBold.woff2") format("woff2");font-weight:800;font-style:normal;font-stretch:normal;font-display:swap}
 	</style>
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -27,28 +28,33 @@
 				<img src="img/logo.svg" width="229" height="32" alt="avito.tech" />
 			</a>
 			<nav class="menuMain-nav">
-				<ul class="menuMain-list fs-18 d-flex align-items-center cleanList" role="menu">
-					<li class="menuMain-item active">
-						<a href="\we" class="menuMain-link" role="menuitem">кто мы</a>
+				<ul class="menuMain-list d-flex align-items-center cleanList animationWaitFor" role="menu">
+					<li class="menuMain-item" data-linksection="1">
+						<span class="menuMain-link" role="menuitem" onclick="goTo(this, document.querySelector('.section-1'), 40)">кто мы</span>
 					</li>
-					<li class="menuMain-item">
-						<a href="\content" class="menuMain-link" role="menuitem">Контент</a>
+					<li class="menuMain-item" data-linksection="2">
+						<span class="menuMain-link" role="menuitem" onclick="goTo(this, document.querySelector('.section-2'), 40)">Цифры</span>
 					</li>
-					<li class="menuMain-item">
-						<a href="https://avitotech.timepad.ru/events/" class="menuMain-link" role="menuitem">Мероприятия</a>
+					<li class="menuMain-item" data-linksection="b1">
+						<span class="menuMain-link" role="menuitem" onclick="goTo(this, document.querySelector('.section-b1'), 40)">Команда</span>
 					</li>
-					<li class="menuMain-item">
-						<span class="menuMain-link" role="menuitem" onclick="doScroll(document.querySelector('.section-7'), 40)">Обучение</span>
+					<li class="menuMain-item" data-linksection="b2">
+						<span class="menuMain-link" role="menuitem" onclick="goTo(this, document.querySelector('.section-b2'), 40)">Структура</span>
 					</li>
-					<li class="menuMain-item">
-						<a href="https://avitotech.timepad.ru/techradar/" class="menuMain-link" role="menuitem">Техрадар</a>
+					<li class="menuMain-item" data-linksection="4">
+						<span class="menuMain-link" role="menuitem" onclick="goTo(this, document.querySelector('.section-4'), 40)">Шерим</span>
 					</li>
-					
-					<li class="menuMain-item">
-						<a class="menuMain-link" href="https://career.avito.com/vacancies/" role="menuitem">вакансии</a>
+					<li class="menuMain-item" data-linksection="5">
+						<span class="menuMain-link" role="menuitem" onclick="goTo(this, document.querySelector('.section-5'), 40)">Мероприятия</span>
 					</li>
-					<li class="menuMain-item">
-						<a class="menuMain-link" href="\contacts" role="menuitem">контакты</a>
+					<li class="menuMain-item" data-linksection="7">
+						<span class="menuMain-link" role="menuitem" onclick="goTo(this, document.querySelector('.section-7'), 40)">Обучение</span>
+					</li>					
+					<li class="menuMain-item" data-linksection="8">
+						<span class="menuMain-link" role="menuitem" onclick="goTo(this, document.querySelector('.section-8'), 40)">Решения</span>
+					</li>
+					<li class="menuMain-item" data-linksection="9">
+						<span class="menuMain-link" role="menuitem" onclick="goTo(this, document.querySelector('.section-9'), 40)">Вакансии</span>
 					</li>
 				</ul>
 			</nav>
@@ -62,10 +68,10 @@
 
 	<main class="body-inner">
 		
-		<section class="section section-1 bg-gray">
+		<section data-numsection="1" class="section section-1 bg-gray">
 			<div class="wrapperDefault">
 				<div class="section-text section-text-absolute">
-					<p class="c-fff fs-58 fw-bold strih-1">AvitoTech&nbsp;&mdash; команда <br /> инженеров, которые не <br class="d-none d-md-block" />просто пишут код, а&nbsp;создают <br /> высокотехнологичные <br /> продукты для <span class="strih-container">людей</span></p>
+					<p class="c-fff fs-58 fw-bold strih-1 animationWaitFor animationType-1" >AvitoTech&nbsp;&mdash; команда инженеров, которые не просто пишут код, а&nbsp;создают высокотехнологичные продукты для <span class="strih-container">людей</span></p>
 				</div>
 				<div class="image section-image mt-3 mt-lg-0" style="max-width: 580px; width: 55%; position: relative; left: 60%;">
 					<img data-lazyload="true" data-src="img/pic-1.svg" width="580" height="580" alt="" />
@@ -73,10 +79,10 @@
 			</div>
 		</section>
 		
-		<section class="section section-2">
+		<section data-numsection="2" class="section section-2">
 			<div class="wrapperDefault">
 				<div class="section-text">
-					<h2 class="strih-2">AvitoTech в <span class="strih-container">цифрах*</span></h2>
+					<h2 class="strih-2 animationWaitFor animationType-2">AvitoTech в <span class="strih-container">цифрах*</span></h2>
 					<p>*На основании внутренних данных AvitoTech</p>
 				</div>
 				<div class="circles circlesContainer">
@@ -129,7 +135,7 @@
 				<div class="row align-items-end">
 					<div class="col-12 col-lg-6">
 						<div class="section-text">
-							<h2 class="h2 c-fff mb-4 strih-3">Что мы <span class="strih-container">делаем</span></h2>
+							<h2 class="h2 c-fff mb-4 strih-3 animationWaitFor animationType-2">Что мы <span class="strih-container">делаем</span></h2>
 							<p class="c-fff fs-16">Разрабатываем и поддерживаем продукты Авито — сервисы, которые делают жизнь миллионов людей удобнее. Скучать не&nbsp;придётся&nbsp;— высокая нагрузка на&nbsp;системы, много задач, для которых нет готовых решений, а&nbsp;на&nbsp;каждом проекте&nbsp;— свои вызовы.</p>
 						</div>
 					</div>
@@ -138,7 +144,7 @@
 							<div class="image section-image d-none d-lg-block mx-auto" style="margin-bottom: -37px;">
 								<img data-lazyload="true" data-src="img/pic-2.svg" alt="" width="444" height="236" style="max-width: 444px;" class="mx-auto" />
 							</div>
-							<a href="https://www.avito.ru/" target="_blank" rel="noopener" class="card noScrollAnimate d-block bg-white br-20 shadHard-1 radius-20 paddinline-30px py-4 position-relative mt-4 mt-lg-0">
+							<a href="https://www.avito.ru/" target="_blank" rel="noopener" class="card noAnimateOnScroll d-block bg-white br-20 shadHard-1 radius-20 paddinline-30px py-4 position-relative mt-4 mt-lg-0">
 								<img data-lazyload="true" data-src="img/avito.svg" alt="" width="155" height="42" />
 								<p class="fs-16_fix ff-med mb-3 mt-3">Cамая популярная онлайн-платформа объявлений в&nbsp;мире с&nbsp;70+ млн. посетителей ежемесячно*</p>
 								<div class="fs-12_fix">*Согласно данным Similar Web на декабрь 2024</div>
@@ -149,11 +155,330 @@
 			</div>
 		</section>
 
-		<section class="section section-4">
+		<section data-numsection="b1" class="section section-b1">
+			<div class="wrapperDefault">
+				<h1 class="strih strih-8 animationWaitFor animationType-2">Команда <span class="strih-container">AvitoTech</span></h1>
+				<p>Ядро и вечный двигатель AvitoTech — инженеры, их в компании уже больше 3000.</p>				
+			</div>
+			<div class="wrapperDefault position-relative circles2 circlesContainer"> 
+				<a href="https://career.avito.com/vacancies/?q=qa&action=filter" target="_blank" class="circle circles2-1 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-3.svg" alt="" />
+						</div>
+						<div class="circle-text fs-16_fix">
+							QA-инженеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/" target="_blank" class="circle circles2-2 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-4.svg" alt="" />
+						</div>
+						<div class="circle-text fs-16_fix">
+							DBA-инженеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&managers=" target="_blank" class="circle circles2-3 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-5.svg" alt="" />
+						</div>
+						<div class="circle-text">
+							Тимлиды
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&tags%5B%5D=s26501" target="_blank" class="circle circles2-4 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-6.svg" alt="" />
+						</div>
+						<div class="circle-text fs-16_fix">
+							SRE-инженеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&tags%5B%5D=s26490" target="_blank" class="circle circles2-5 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-7.svg" alt="" />
+						</div>
+						<div class="circle-text">
+							фронтендеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=data-science" target="_blank" class="circle circles2-6 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-8.webp" alt="" />
+						</div>
+						<div class="circle-text fs-16_fix">
+							DS-инженеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=analitika-dannykh" target="_blank" class="circle circles2-7 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">											
+							<img src="img/picSmall-9.svg" alt="" />						
+						</div>
+						<div class="circle-text">
+							Аналитики данных
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=dizayn" target="_blank" class="circle circles2-8 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-10.svg" alt="" />						
+						</div>
+						<div class="circle-text fs-16_fix">
+							Дизайнеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&team%5B%5D=analiticheskaya-platforma" target="_blank" class="circle circles2-9 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-11.webp" alt="" />						
+						</div>
+						<div class="circle-text fs-16_fix">
+							Data-<br />инженеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&tags%5B%5D=s26494" target="_blank" class="circle circles2-10 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-14.svg" alt="" />
+						</div>
+						<div class="circle-text">
+							Бэкендеры
+						</div>
+					</div>
+				</a>
+				<a href="https://career.avito.com/vacancies/?q=&action=filter&direction=razrabotka&tags%5B%5D=s26500&tags%5B%5D=s26499" target="_blank" class="circle circles2-11 shadHard-1" style="">
+					<div class="circle-inner">
+						<div class="circle-image">
+							<img src="img/picSmall-12.svg" style="width: 33%" alt="" />						
+							<img src="img/picSmall-13.svg" style="width: 33%" alt="" />						
+						</div>
+						<div class="circle-text fs-16_fix">
+							Мобильные разработчики
+					</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="seeAll-wrapper text-center">
+				<a class="seeAll-lnk radius-12 shadHard-2 bg-purpleDark c-fff" href="https://career.avito.com/" target="_blank" rel="noopener">Узнать больше</a>
+			</div>
+		</section>
+
+		<section data-numsection="b2" class="section section-b2">
+			<div class="wrapperDefault">
+				<h2 class="strih strih-9 mb-4 animationWaitFor animationType-2">Как устроен <span class="strih-container">AvitoTech</span></h2>
+				<p>
+					У нас <span class="wideBold">пять вертикалей</span> по направлениям бизнеса. <br class="d-none d-md-block" />
+					А также <span class="wideBold">9 горизонталей</span>, под которыми свои команды разработчиков, ответственные за стримы.
+				</p>
+
+				<h3 class="mt-5">Вертикали</h3>
+				<p>Тут мы разрабатываем направления взаимодействия с пользователями и решения для них.</p>
+				<div class="cards-list cardsInRow-5">
+					<a href="https://career.avito.com/teams/auto/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								АВТО
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/realty/" target="_blank" rel="noopener" class="card card-sm shadHard-1">					
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Недвижимость
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/goods/" target="_blank" rel="noopener" class="card card-sm shadHard-1">										
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Товары
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/job/" target="_blank" rel="noopener" class="card card-sm shadHard-1">															
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Работа
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/services/" target="_blank" rel="noopener" class="card card-sm shadHard-1">																				
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Услуги
+							</div>
+						</div>
+					</a>	
+				</div>
+
+				<h3 class="mt-5">Горизонтали</h3>
+				<p>А тут мы улучшаем текущие сервисы и решения, и разрабатываем новые.</p>
+				<div class="cards-list  cardsInRow-4">					
+					<a href="https://career.avito.com/teams/search-and-recommendations/" target="_blank" rel="noopener" style="grid-column:1/3" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-1.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Search & Recommendations
+							</div>
+							<div class="card-text mt-auto">
+								Помогает пользователям легко находить нужные товары и услуги на Авито
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/buyers-experience/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-2.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Private users
+							</div>
+							<div class="card-text mt-auto">
+								Отвечает за счастье частных пользователей Авито
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/sellers-experience/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-3.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Seller Experience
+							</div>
+							<div class="card-text mt-auto">
+								Заботится о комфорте продавцов
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/monetization/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-4.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Monetization & ADV
+							</div>
+							<div class="card-text mt-auto">
+								Развивает монетизационные и рекламные инструменты
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/fintech/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-5.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Fintech
+							</div>
+							<div class="card-text mt-auto">
+								Делает товары доступнее для покупателя. А продавцы могут продавать больше и быстрее
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/trust-and-safety/" target="_blank" rel="noopener" style="grid-column:3/5" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-6.webp" alt="" />
+							<div class="card-title text-uppercase">
+								SafeCom
+							</div>
+							<div class="card-text mt-auto">
+								Делает коммуникацию между пользователями комфортной и безопасной, развивает профили, верификацию, систему рейтингов и отзывов
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/analytical-platform/" target="_blank" rel="noopener" style="grid-column:1/3" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-7.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Analytics platform
+							</div>
+							<div class="card-text mt-auto">
+								Cоздаёт единую платформу, с помощью которой другие команды могут решать аналитические задачи быстро и самостоятельно
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/dsswat/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-1.webp" alt="" />
+							<div class="card-title text-uppercase">
+								AI Lab
+							</div>
+							<div class="card-text mt-auto">
+								Занимается задачами data science для разных команд Авито
+							</div>
+						</div>
+					</a>
+					<a href="https://career.avito.com/teams/internal-projects/" target="_blank" rel="noopener" class="card shadHard-1">
+						<div class="card-inner">
+							<img data-lazyload="true" width="50" height="50" data-src="img/star-8.webp" alt="" />
+							<div class="card-title text-uppercase">
+								Operations
+							</div>
+							<div class="card-text mt-auto">
+								Делает Авито эффективнее и удобнее
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<h3 class="mt-5">Платформа</h3>
+				<p>Тут мы делаем работу инженеров Авито быстрой и удобной. Создаём гибкую архитектуру, храним данные и разрабатываем инструменты, которые помогают продуктовым командам.</p>
+				<div class="cards-list">					
+					<a href="https://career.avito.com/teams/technical-platform/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Architecture
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/technical-platform/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								InfrastrucTure
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/technical-platform/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Mobile
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/technical-platform/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								QA
+							</div>
+						</div>
+					</a>	
+					<a href="https://career.avito.com/teams/technical-platform/" target="_blank" rel="noopener" class="card card-sm shadHard-1">
+						<div class="card-inner">																					
+							<div class="card-title text-uppercase">
+								Security
+							</div>
+						</div>
+					</a>	
+				</div>
+
+			</div>
+		</section>
+
+		<section data-numsection="4" class="section section-4">
 			<div class="wrapperDefault">
 				<div class="row align-items-center">
 					<div class="col-12 col-lg ">
-						<h2 class="h2 strih-4">Шерим  <span class="strih-container">экспертизу</span></h2>
+						<h2 class="h2 strih-4 animationWaitFor animationType-2">Шерим  <span class="strih-container">экспертизу</span></h2>
 					</div>
 					<div class="col-lg-auto d-none d-lg-block">
 						<a class="seeAll-lnk radius-12 shadHard-2 bg-purpleDark c-fff c-static" href="https://avito.tech/content">СМОТРЕТЬ ВСЕ</a>
@@ -168,7 +493,7 @@
 					<a href="" class="btn-round btn-big btn-white">новости</a>
 				</div>
 				
-				<div class="buttonsTab d-none d-lg-flex">
+				<div class="buttonsTab d-none d-lg-flex animationWaitFor">
 					<a href="" class="btn-round btn-white active">все</a>
 					<a href="" class="btn-round btn-white">статьи</a>
 					<a href="" class="btn-round btn-white">видео</a>
@@ -418,11 +743,11 @@
 			</div>
 		</section>
 
-		<section class="section section-5">
+		<section data-numsection="5" class="section section-5">
 			<div class="wrapperDefault">
 				<div class="row align-items-center">
 					<div class="col-12 col-lg">
-						<h2 class="h2 strih-5">Проводим <span class="strih-container">мероприятия</span></h2>
+						<h2 class="h2 strih-5 animationWaitFor animationType-2">Проводим <span class="strih-container">мероприятия</span></h2>
 					</div>
 					<div class="col-lg-auto d-none d-lg-block">
 						<a class="seeAll-lnk radius-12 shadHard-2 bg-purpleDark c-fff c-static" href="https://avitotech.timepad.ru/events/">СМОТРЕТЬ ВСЕ</a>
@@ -434,7 +759,7 @@
 					<a href="" class="btn-round btn-big btn-white">офлайн</a>
 					<a href="" class="btn-round btn-big btn-white">гибрид</a>
 				</div>
-				<div class="buttonsTab">
+				<div class="buttonsTab animationWaitFor">
 					<a href="" class="btn-round btn-white">QA meetup</a>
 					<a href="" class="btn-round btn-white">Backend Drinkup</a>
 					<a href="" class="btn-round btn-white">Mobile meetup</a>
@@ -496,15 +821,15 @@
 			</div>
 		</section>
 
-		<section class="section section-7">
+		<section data-numsection="7" class="section section-7">
 			<div class="wrapperDefault">
 				<div class="row align-items-center">
 					<div class="col-12 col-lg">
-						<h2 class="h2 strih-6"><span class="strih-container">Обучаем</span></h2>
+						<h2 class="h2 strih-6 animationWaitFor animationType-2"><span class="strih-container">Обучаем</span></h2>
 					</div>					
 				</div>	
 				
-				<div class="buttonsTab buttonsTab-line">
+				<div class="buttonsTab buttonsTab-line animationWaitFor">
 					<a href="" class="btn-round btn-white">JavaScript</a>
 					<a href="" class="btn-round btn-white">Управление разработкой</a>
 					<a href="" class="btn-round btn-white">Паттерны и практики</a>
@@ -572,9 +897,9 @@
 			</div>
 		</section>
 
-		<section class="section section-8">
+		<section data-numsection="8" class="section section-8">
 			<div class="wrapperDefault">
-				<h2 class="h2 strih-7">Создаем и развиваем IT-решения для <span class="strih-container">бизнеса</span></h2>
+				<h2 class="h2 strih-7 animationWaitFor animationType-2">Создаем и развиваем <span class="strih-container">IT-решения</span></h2>
 				<div class="cards-list">
 					<a href="" class="card shadHard-1">
 						<div class="card-inner">																					
@@ -600,10 +925,10 @@
 			</div>
 		</section>
 
-		<section class="section section-extended section-9 bg-gray">
-			<div class="wrapperDefault mb-5 position-relative">
+		<section data-numsection="9" class="section section-extended section-9 bg-gray">
+			<div class="wrapperDefault">
 				<div class="section-text section-text-absolute">
-					<h2 class="h2 c-fff mb-4 strih-1">Хочешь <br /> <span class="strih-container">присоединиться?</span></h2>
+					<h2 class="h2 c-fff mb-4 strih-1 animationWaitFor animationType-2">Хочешь <span class="strih-container">присоединиться?</span></h2>
 					<p class="c-fff mb-5">Вакансии в команду AvitoTech</p>
 					<a class="seeAll-lnk radius-12 shadHard-2 bg-purpleDark c-fff c-static" href="https://career.avito.com/vacancies/">НАШИ ВАКАНСИИ — ЗДЕСЬ</a>
 				</div>
@@ -612,6 +937,9 @@
 				</div>
 			</div>
 		
+		</section>
+
+		<section class="section section-10 bg-gray">
 			<div class="logos ">
 				<div class="logos__line logos__line__8" data-speed="70" data-direction="1">
 					<span class="btn-round btn-big btn-white logos__line__item">ОБУЧЕНИЕ</span>
@@ -697,6 +1025,7 @@
 			<a href="/" class="footerMain-logo">
 				<img data-lazyload="true" data-src="img/logo.svg" width="229" height="32" alt="avito.tech" />
 			</a>
+			<!--
 			<nav class="menuMain-nav">
 				<ul class="menuMain-list fs-18 d-flex align-items-center cleanList" role="menu">
 					<li class="menuMain-item">
@@ -722,6 +1051,7 @@
 					</li>
 				</ul>
 			</nav>			
+			-->
 		</div>
 	</div>
 	<div class="footerMain-inner bg-black">
