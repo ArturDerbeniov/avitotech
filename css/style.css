@@ -424,6 +424,7 @@ h3, .h3,
 h4, .h4 {
   margin: 0;
   font-weight: normal;
+  line-height: 1.1;
 }
 
 h1, .h1 {
@@ -682,21 +683,13 @@ a.btn:visited, .btn:visited {
 
 img:not([data-lazyload]) {
   opacity: 1;
-  -webkit-transition: opacity 0.4s linear;
-  -o-transition: opacity 0.4s linear;
   transition: opacity 0.4s linear;
 }
 
 .btn-round {
   min-height: clamp(1.875rem, 1.738rem + 0.52vw, 2.125rem);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
           justify-content: center;
   border-radius: 30px;
   font-size: clamp(0.875rem, 0.779rem + 0.36vw, 1rem);
@@ -709,8 +702,6 @@ img:not([data-lazyload]) {
   font-family: "GolosText-SemiBold";
   white-space: nowrap;
   cursor: pointer;
-  -webkit-transition: background-color 0.2s, color 0.2s;
-  -o-transition: background-color 0.2s, color 0.2s;
   transition: background-color 0.2s, color 0.2s;
 }
 .btn-round.active {
@@ -758,9 +749,12 @@ img:not([data-lazyload]) {
 }
 
 .seeAll-lnk {
+	display: inline-block;
   font-family: "GolosText-Medium";
   padding: 10px 25px;
   text-transform: uppercase;
+  scale: 1;
+  transition: scale .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .seeAll-lnk_bg {
   padding: 14px 40px;
@@ -768,6 +762,7 @@ img:not([data-lazyload]) {
 @media (hover: hover) {
   .seeAll-lnk:hover {
     background-color: var(--purple);
+	scale: 1.05;
   }
 }
 @media (hover: none) {
@@ -2343,6 +2338,10 @@ img:not([data-lazyload]) {
   }
 }
 @media (min-width: 992px) {
+	.hero-title {
+		width: 70%;
+		line-height: 1;
+	}
 	.footerMain-inner.bg-purple {
 	padding-block: 0;
 	}
@@ -2358,6 +2357,14 @@ img:not([data-lazyload]) {
 	.section-1 .animationType-1 {
 		width: 70%;		
 	}	
+}
+
+.hero-title span {
+  display: inline-block;
+  overflow: hidden;
+}
+.hero-image img {
+	transition: none !important;
 }
 .textLine {
 	display: block;
